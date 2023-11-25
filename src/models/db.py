@@ -13,7 +13,7 @@ DB_USERNAME = os.environ.get("DB_USERNAME")
 DB_PASSWORD = os.environ.get("DB_PASSWORD")
 DB_HOSTNAME = os.environ.get("DB_HOSTNAME")
 DB_NAME = os.environ.get("DB_NAME")
-
+print(DB_HOSTNAME)
 connection_string = f'Driver=ODBC Driver 17 for SQL Server;Server={DB_HOSTNAME};Database={DB_NAME};Uid={DB_USERNAME};Pwd={DB_PASSWORD};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
 
 # Create the SQLAlchemy engine

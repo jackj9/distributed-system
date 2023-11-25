@@ -2,8 +2,8 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
     "AzureWebJobsStorage": "",
-    "SqlConnectionString": "Server=tcp:disitributed-server.database.windows.net,1433;Database=disitrbuted-systems;Uid=jack;Pwd=G_ingerbread1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "SqlConnectionString":"Server=disitributed-server.database.windows.net,1433;Database=disitrbuted-systems;Uid=jack;Pwd=G_ingerbread1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
   }
 }

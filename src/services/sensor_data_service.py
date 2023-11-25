@@ -6,10 +6,10 @@ from sqlalchemy import func
 
 class SensorDataService:
 
-    def add_sensors(sensorNumber):
+    def add_sensors(sensorNumber,multiplier):
 
         session = Session()
-    
+        
         for i in range(1,sensorNumber+1):
             sensor_data = SensorData()
             sensor_data.temperature = random.randint(8,15)

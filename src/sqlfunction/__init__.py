@@ -8,13 +8,6 @@ from services.sensor_data_service import SensorDataService
 def main(changes):
     
     logging.info("Trigger executed successfully.")
-    try:
-        max_values  = SensorDataService.run_statistics()
-        for sensor in max_values:
-            logging.info(f"Sensor ID : {sensor.sensor_id}, Max Temperature:{sensor.temperature} , Max Relative Humidity: {sensor.relative_humidity} , MAx CO2: {sensor.co2} Max windspeed: {sensor.wind_speed}")
-            
-    except Exception as e:
-        logging.info(e)
     senor_data = SensorDataService.get_sensor_stats()
     
     for stat in senor_data:
@@ -22,7 +15,7 @@ def main(changes):
         logging.info(f"Sensor ID: {stat.sensor_id}, Max Temperature: {stat.max_temperature}, Avg Temperature: {stat.avg_temperature}, Min Temperature: {stat.min_temperature}, ")
         logging.info(f"Sensor ID: {stat.sensor_id}, Max Wind Speed {stat.max_wind_speed}, Avg Wind Speed {stat.avg_wind_speed}, Min Wind Speed {stat.min_wind_speed}, ")
         logging.info(f"Sensor ID: {stat.sensor_id}, Max Relative Humidity {stat.max_relative_humidity}, Avg Relative Humidity {stat.avg_relative_humidity}, Min Relative Humidity {stat.min_relative_humidity}, ")
-
+    
 
 
 

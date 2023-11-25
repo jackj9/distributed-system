@@ -4,8 +4,10 @@
 
 azure-functions
 pip
-mysql-connector-python
 pipenv
-pyodbc
 python-dotenv
+pyodbc
+mysql-connector-python
 sqlalchemy
+
+
